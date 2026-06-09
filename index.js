@@ -134,11 +134,12 @@ client.on("messageCreate", async (message) => {
             channel: message.channel,
             requestedBy: message.author
           },
-          volume: 70,
-          leaveOnEmpty: true,
-          leaveOnEmptyCooldown: 30000,
+          volume: 100,
+          bufferingTimeout: 15000,
+          leaveOnEmpty: false,
+          leaveOnEmptyCooldown: 15000,
           leaveOnEnd: false,
-          leaveOnEndCooldown: 30000
+          leaveOnEndCooldown: 15000
         }
       });
 
