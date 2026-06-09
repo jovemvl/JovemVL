@@ -137,7 +137,7 @@ client.on("messageCreate", async (message) => {
           volume: 70,
           leaveOnEmpty: true,
           leaveOnEmptyCooldown: 30000,
-          leaveOnEnd: true,
+          leaveOnEnd: false,
           leaveOnEndCooldown: 30000
         }
       });
